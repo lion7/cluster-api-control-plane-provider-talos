@@ -59,12 +59,13 @@ ARG TAG
 RUN cd config/manager \
   && kustomize edit set image controller=${REGISTRY_AND_USERNAME}/${NAME}:${TAG} \
   && cd - \
-  && kustomize build config >/control-plane-components.yaml \
+  && kustomize build config/default >/control-plane-components.yaml \
   && cp config/metadata/metadata.yaml /metadata.yaml
 
 FROM scratch AS release
-COPY --from=release-build /control-plane-components.yaml /control-plane-components.yaml
-COPY --from=release-build /metadata.yaml /metadata.yaml
+ARG TAG
+COPY --from=release-build /control-plane-components.yaml /control-plane-talos/${TAG}/control-plane-components.yaml
+COPY --from=release-build /metadata.yaml /control-plane-talos/${TAG}/metadata.yaml
 
 FROM build AS binary
 ARG TARGETARCH
