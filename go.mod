@@ -17,17 +17,17 @@ require (
 	github.com/talos-systems/talos/pkg/machinery v0.12.3-0.20210920195258-7e63e43eb399
 	google.golang.org/grpc v1.40.0
 	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
-	k8s.io/api v0.17.9
-	k8s.io/apimachinery v0.17.9
+	k8s.io/api v0.20.0
+	k8s.io/apimachinery v0.20.0
 	k8s.io/apiserver v0.17.9
-	k8s.io/client-go v0.17.9
-	k8s.io/utils v0.0.0-20200619165400-6e3d28b6ed19
+	k8s.io/client-go v0.20.0
+	k8s.io/utils v0.0.0-20201110183641-67b214c5f920
 	sigs.k8s.io/cluster-api v0.3.23
 	sigs.k8s.io/controller-runtime v0.5.14
 )
 
 require (
-	cloud.google.com/go v0.46.3 // indirect
+	cloud.google.com/go v0.54.0 // indirect
 	github.com/AlekSi/pointer v1.1.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
@@ -48,7 +48,7 @@ require (
 	github.com/google/go-github v17.0.0+incompatible // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
-	github.com/googleapis/gnostic v0.3.1 // indirect
+	github.com/googleapis/gnostic v0.4.1 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
@@ -79,12 +79,12 @@ require (
 	go.uber.org/atomic v1.7.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
 	go.uber.org/zap v1.18.1 // indirect
-	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
+	golang.org/x/crypto v0.0.0-20201002170205-7f63de1d35b0 // indirect
 	golang.org/x/net v0.0.0-20210525063256-abc453219eb5 // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d // indirect
 	golang.org/x/sys v0.0.0-20210630005230-0f9fa26af87c // indirect
 	golang.org/x/text v0.3.6 // indirect
-	golang.org/x/time v0.0.0-20191024005414-555d28b269f0 // indirect
+	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
 	gomodules.xyz/jsonpatch/v2 v2.0.1 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
 	google.golang.org/genproto v0.0.0-20210722135532-667f2b7c528f // indirect
@@ -97,7 +97,8 @@ require (
 	k8s.io/apiextensions-apiserver v0.17.9 // indirect
 	k8s.io/cluster-bootstrap v0.17.9 // indirect
 	k8s.io/klog v1.0.0 // indirect
-	k8s.io/klog/v2 v2.0.0 // indirect
-	k8s.io/kube-openapi v0.0.0-20200410145947-bcb3869e6f29 // indirect
+	k8s.io/klog/v2 v2.4.0 // indirect
+	k8s.io/kube-openapi v0.0.0-20201113171705-d219536bb9fd // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.0.2 // indirect
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
